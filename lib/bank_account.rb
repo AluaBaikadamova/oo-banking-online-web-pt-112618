@@ -15,6 +15,7 @@ end
 
 def display_balance
   a1=@balance
+  a1=0
   print "Your balance is $#{a1}.\n"
 end
 
