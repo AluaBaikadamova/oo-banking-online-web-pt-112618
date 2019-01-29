@@ -28,7 +28,7 @@ def execute_transaction
     a=@sender.balance
     b=@receiver.balance
 @sender.balance=a-@amount
-@receiver.balance=b-@amount
+@receiver.balance=b+@amount
 else
 puts "Transaction rejected. Please check your account balance."
 
