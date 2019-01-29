@@ -13,8 +13,8 @@ def deposit(summ)
 end
 
 def display_balance
-  a=@balance
-  puts "Your balance is $#{a}."
+  a1=@balance
+  puts "Your balance is $#{a1}."
 end
 
 def valid?
