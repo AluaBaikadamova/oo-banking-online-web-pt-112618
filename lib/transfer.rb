@@ -13,7 +13,7 @@ end
 def valid?
   t1=@sender.valid?
   t2=@receiver.valid?
- if ((@sender.valid?==true) && (@receiver.valid?==true))
+ if ((t1==true) && (t2==true))
   return true
  else
   return false
