@@ -13,7 +13,7 @@ end
 def valid?
   t1=@sender.valid?
   t2=@receiver.valid?
- if ((t1==true) && (t2==true))
+ if ((t1==true)&&(t2==true))
   return true
  else
   return false
@@ -33,7 +33,7 @@ def execute_transaction
 else
 puts "Transaction rejected. Please check your account balance."
 
-
+@status="rejected"
   end
 end
 
