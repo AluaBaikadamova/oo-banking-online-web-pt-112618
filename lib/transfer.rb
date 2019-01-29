@@ -47,7 +47,7 @@ def reverse_transfer
     b=@receiver.balance
     @sender.balance=a+@amount
     @receiver.balance=b-amount
-    @status="complete"
+    @status="reversed"
 
   end
 end
