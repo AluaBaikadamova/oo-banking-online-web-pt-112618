@@ -3,18 +3,19 @@ class BankAccount
 
   attr_accessor :balance, :status
     attr_reader :name
-def initialize(name,balance=1000,status="open")
+def initialize(name, balance=1000, status="open")
   @name=name
   @balance=balance
   @status=status
 end
 def deposit(summ)
 @balance=@balance+summ
+#puts "#{@balance}"
 end
 
 def display_balance
   a1=@balance
-  puts "Your balance is $#{a1}."
+  puts "Your balance is $#{@balance}."
 end
 
 def valid?
