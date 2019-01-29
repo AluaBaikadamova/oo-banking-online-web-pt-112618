@@ -16,12 +16,16 @@ def display_balance
   puts "Your balance is $#{@balance}."
 end
 
-def valid?(s,r)
- if (s.valid?==true)&&(r.valid?==true)
+def valid?
+ if (sender.valid?==true)&&(receiver.valid?==true)
    return true
  else
    return false
 
 end
+end
+
+
+def execute_transaction
 end
 end
