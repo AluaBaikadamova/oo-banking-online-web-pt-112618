@@ -10,6 +10,14 @@ def deposit(sum)
 end
 
 def display_balance
-  puts "Your balance is $#{@balance}.""
+  puts "Your balance is $#{@balance}."
+end
+
+def valid?
+ if (@status=="open")&&(balance>0)
+   return true
+ else
+   return false
+ end
 end
 end
