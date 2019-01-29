@@ -4,7 +4,7 @@ class BankAccount
   attr_accessor :balance, :status
     attr_reader :name
 def initialize(name,balance=1000,status="open")
-  @name=name.freeze
+  @name=name
   @balance=balance
   @status=status
 end
@@ -16,7 +16,7 @@ def display_balance
   puts "Your balance is $#{@balance}."
 end
 
-def self.valid?
+def valid?
  if (@status=="open")&&(@balance>0)
    return true
  else
