@@ -21,5 +21,7 @@ def valid?(s,r)
    return true
  else
    return false
- endr code here
+ 
+end
+end
 end
