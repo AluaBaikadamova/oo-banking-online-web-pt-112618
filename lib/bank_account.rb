@@ -14,9 +14,11 @@ def deposit(summ)
 end
 
 def display_balance
-  a1=self.balance
-  a1=0
-  puts "Your balance is $#{a1}.\n"
+#  a1=self.balance
+  #a1=0
+#  puts "Your balance is $#{self.balance}.\n"
+
+puts "lalala"
 end
 
 def valid?
