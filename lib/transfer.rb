@@ -26,7 +26,7 @@ def execute_transaction
   t=self.valid?
   t1=@sender.balance>=@amount
   t2=t&&t1
-    if (t2==true)&&(t1>=@amount))
+    if (t2==true)&&(@status=="pending")
     a=@sender.balance
     b=@receiver.balance
 @sender.balance=a-@amount
