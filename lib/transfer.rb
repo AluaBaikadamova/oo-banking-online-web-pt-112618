@@ -33,7 +33,7 @@ def execute_transaction
 @receiver.balance=b+@amount
 @status="complete"
 else
-  
+
   @status="rejected"
 puts "Transaction rejected. Please check your account balance.\n"
 
