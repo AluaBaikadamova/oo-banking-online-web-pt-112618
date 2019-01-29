@@ -23,7 +23,8 @@ end
 
 
 def execute_transaction
-  if (self.valid?==true)
+  t=self.valid?
+  if (t==true)
     a=@sender.balance
     b=@receiver.balance
 @sender.balance=a-@amount
