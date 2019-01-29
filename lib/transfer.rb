@@ -23,6 +23,16 @@ end
 
 
 def execute_transaction
+  if (self.valid?==true)
+    a=@sender.balance
+    b=@receiver.balance
+@sender.balance=a-@amount
+@receiver.balance=b-@amount
+else
+puts "Transaction rejected. Please check your account balance."
+
+
+  end
 end
 
 
