@@ -15,7 +15,7 @@ end
 
 def display_balance
   a1=@balance
-  puts "Your balance is $#{@balance}."
+  puts "Your balance is $#{a1}."
 end
 
 def valid?
