@@ -1,5 +1,5 @@
 class BankAccount
-  attr_accessor :name, :balance, :status
+  attr_accessor :balance, :status
 def initialize(name,balance=1000,status='open')
   @name=name.freeze
   @balance=balance
@@ -10,7 +10,7 @@ def deposit(sum)
 end
 
 def display_balance
-  puts "Your balance is $#{balance}."
+  puts "Your balance is $#{@balance}."
 end
 
 def valid?
