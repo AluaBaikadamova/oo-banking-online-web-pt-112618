@@ -6,12 +6,12 @@ def initialize(name,balance=1000,status="open")
   @balance=balance
   @status=status
 end
-def deposit(sum)
-@balance=@balance+sum
+def deposit(summ)
+@balance=@balance+summ
 end
 
 def display_balance
-  puts "Your balance is $#{self.balance}."
+  puts "Your balance is $#{@balance}."
 end
 
 def valid?
