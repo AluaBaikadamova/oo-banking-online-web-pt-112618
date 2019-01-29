@@ -16,9 +16,9 @@ end
 def display_balance
 #  a1=self.balance
   #a1=0
-#  puts "Your balance is $#{self.balance}.\n"
+s= "Your balance is $#{@balance}."
 
-puts "lalala"
+return s
 end
 
 def valid?
