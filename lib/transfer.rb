@@ -24,11 +24,12 @@ end
 
 def execute_transaction
   t=self.valid?
-  if (t==true)
+  if (t==true)&&(@status=="pending")
     a=@sender.balance
     b=@receiver.balance
 @sender.balance=a-@amount
 @receiver.balance=b+@amount
+@status="complete"
 else
 puts "Transaction rejected. Please check your account balance."
 
