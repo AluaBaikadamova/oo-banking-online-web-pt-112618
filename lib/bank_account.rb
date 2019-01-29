@@ -8,7 +8,7 @@ end
 def deposit(sum)
 @balance=@balance+sum
 end
-  
+
 def display_balance
   puts "Your balance is $#{@balance}.""
 end
