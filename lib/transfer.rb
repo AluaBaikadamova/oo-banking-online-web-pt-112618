@@ -35,9 +35,9 @@ def execute_transaction
 else
 
   @status="rejected"
-puts "Transaction rejected. Please check your account balance.\n"
+s= "Transaction rejected. Please check your account balance."
 
-
+return s
   end
 end
 
